@@ -25,7 +25,6 @@ public void run() {
 
         out.writeUTF(Client.name); // send 'name' to Server
         System.out.println(Client.name + " : succesfully joined the chat room: ");
-![Screen Shot 2019-05-02 at 7.47.19 PM](/assets/Screen%20Shot%202019-05-02%20at%207.47.19%20PM.png)
 
     try {
         // This loop is to keep reading data from Server
