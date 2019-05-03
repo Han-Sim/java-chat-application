@@ -27,9 +27,7 @@ public void run() {
 
         out.writeUTF(Client.name); // send 'name' to Server
         System.out.println(Client.name + " : succesfully joined the chat room: ");
-
-    } catch (IOException e) {
-    }
+![Screen Shot 2019-05-02 at 7.47.19 PM](/assets/Screen%20Shot%202019-05-02%20at%207.47.19%20PM.png)
 
     try {
         // This loop is to keep reading data from Server
@@ -44,3 +42,33 @@ public void run() {
 
 }
 ```
+
+### Demo
+
+##### 1. Run Server and two clients
+
+Server-side Log
+
+![Screen Shot 2019-05-02 at 7.47.19 PM.png](https://i.loli.net/2019/05/03/5ccb8596226b7.png)
+
+ Clients Reqquest: When users enter their name, they request a connection to Server
+
+![Screen Shot 2019-05-02 at 7.47.30 PM.png](https://i.loli.net/2019/05/03/5ccb85dca5c47.png)
+
+![Screen Shot 2019-05-02 at 7.47.45 PM.png](https://i.loli.net/2019/05/03/5ccb8615d7c5b.png)
+
+##### 2. Accept the connections and establish the chat room for clients.
+
+Server-side Log 
+
+![Screen Shot 2019-05-02 at 7.47.53 PM.png](https://i.loli.net/2019/05/03/5ccb86203ac56.png)
+
+Server now sends data to clients throw data stream. If John says 'hi', server send this to each clients.
+
+Example: Client 'Jane' Window 
+
+![Screen Shot 2019-05-02 at 7.48.17 PM.png](https://i.loli.net/2019/05/03/5ccb86df0637a.png)
+
+##### Server keeps every log and displays it
+
+![Screen Shot 2019-05-02 at 7.48.20 PM.png](https://i.loli.net/2019/05/03/5ccb870374d5c.png)
