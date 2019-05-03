@@ -1,11 +1,9 @@
 # Multi-threaded Socket Programming - Chat Application with Java
 
-This is a simple chat applciation. Please check Workshop - 8 SAB.pdf file to see the requirments of this workshop.
-
 - key packages: java.net.\* package and JavaFX
 - Multi-threaded socket programming: it accepts up to 10 requests from clients.
 
-### Server-side classes
+### Server-side
 
 - ChatServer: This is to build an application using JavaFX
 - ChatService: This is to run a thread which reads stream from client
